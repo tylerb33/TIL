@@ -1,0 +1,7 @@
+### Setting the upstream of a branch
+
+- Use the ```git remote set-url``` command for this. It takes two arguments:
+
+An existing remote name. For example, ```origin``` or ```upstream``` are two common choices.
+
+A new URL for the remote. For example, this is a complete command: ``` git remote set-url origin https://github.com/tylerb33/TIL.git ```
