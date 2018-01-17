@@ -15,3 +15,4 @@ Problems with callbacks:
 
 **Not *reason*able** - they can't reason with actions happening.
 
+Thunk - a function that doesn't need inputs, it will return a static value.
