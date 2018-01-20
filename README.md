@@ -8,37 +8,17 @@ A collection of summaries from what I learn day-to-day. This will serve as a way
 
 ### Categories
 
-* [JavaScript](#javascript)
-* [SQL](#mysql)
-* [Rails](#rails)
-* [React](#react)
-* [Ruby](#ruby)
+* [C#](https://github.com/tylerb33/TIL/tree/master/C-Sharp)
+* [JavaScript](https://github.com/tylerb33/TIL/tree/master/JavaScript)
+* [Git](https://github.com/tylerb33/TIL/tree/master/GIT)
+* [SQL](https://github.com/tylerb33/TIL/tree/master/SQL)
+* [Rails](#rails) - Coming soon
+* [React](#react) - Coming soon
+* [Ruby](#ruby) - Coming soon
 
 ---
 
-### GIT
-- [PLACEHOLDER](git/placeholder.md)
-
-### JavaScript
-
-- [PLACEHOLDER](javascript/placeholder.md)
-
-### SQL
-
-- [PLACEHOLDER](sql/placeholder.md)
-
-### Rails
-
-- [PLACEHOLDER](rails/placeholder.md)
-
-### Ruby
-
-- [PLACEHOLDER](ruby/placeholder.md)
-
-### React
-
-- [PLACEHOLDER](react/placeholder.md)
 
 
-Acknowledgements
+***Acknowledgements***
 Formatting is based off of the TIL of jbranchaud 
