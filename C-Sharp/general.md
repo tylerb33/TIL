@@ -24,11 +24,54 @@
 
 - If you type a period after a datatype, you'll see a list of possible methods to use. i.e. 'int.'
 
-Static properties and methods are those that are available on the class. For example, the integer class or math or string class.
+- Static properties and methods are those that are available on the class. For example, the integer class or math or string class.
 
-After instantiating a variable... there are more methods available on that variable. (Just type the variable name then a period)
+- After instantiating a variable... there are more methods available on that variable. (Just type the variable name then a period)
 
-It's possible to use uppercase variable names (it's a crossover from Java).
+*Constants*
+
+- These are immutable, the advantage is that it doesn't take up any memory like a variable does
+const float pi=3.14f;
+
+enum weekDays { Monday, Tuesday, Wednesday, Thursday, Friday};
+var someDay = weekDays.Monday;
+- Enums are similar to arrays but they allow you to use the actual values to reference values instead of numbers (like array positions)
+
+You could also assign the number values
+enum weekDays { Monday = 1, Tuesday, Wednesday, Thursday, Friday};
+// Now Monday is 1, Tuesday is 2, etc.
+
+- Typing ```ctor``` then ```tab``` ```tab``` will make a constructor function for you in Visual Studio
+
+
+*Function Bodied Expression*
+New feature as of last release of C#.
+
+public float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3; // only use this in very simple methods.
+
+*Static Methods*
+
+- Add ```static``` to beginning of method. Makes it visible from other classes, and can be used without instantiation.
+
+public static float AverageThreeScores (float a, float b, float c) {
+	...code...
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
