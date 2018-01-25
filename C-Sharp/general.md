@@ -59,11 +59,9 @@ public static float AverageThreeScores (float a, float b, float c) {
 
 
 
+-Abstract class, required to be over written. For instance an abstract class could be 'people', and 'teacher' and 'student' could extend that abstract class.
 
-
-
-
-
+- Extension methods - can extend the methods of an existing base class. Such as adding in a method to calculate word count
 
 
 
