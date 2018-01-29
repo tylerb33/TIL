@@ -3,7 +3,7 @@
 - C# is strongly typed, but implicit types can be used if you explicitly use 'var = "this is a string"', it's able to reason that it's a string. 
 - must use double quotes for strings
 
--there are many numeric types:
+- there are many numeric types:
 	INTEGER 
 		- if you use ```int```, it can hold smaller numbers but can also handle negatives. 
 		- if you use ```uint``` then it can hold larger numbers but no negatives.
@@ -59,11 +59,19 @@ public static float AverageThreeScores (float a, float b, float c) {
 
 
 
--Abstract class, required to be over written. For instance an abstract class could be 'people', and 'teacher' and 'student' could extend that abstract class.
+- Abstract class, required to be over written. For instance an abstract class could be 'people', and 'teacher' and 'student' could extend that abstract class.
 
 - Extension methods - can extend the methods of an existing base class. Such as adding in a method to calculate word count
 
 
+
+- A namespace is a collection of classes
+
+- The Main method is the entry point for all C# programs. The Main method states what the class does when executed.
+
+- All statements and expression must end with a semicolon (;)
+
+- Console.ReadKey() - Obtains the next character or function key pressed by the user. The pressed key is displayed in the console window.
 
 
 
