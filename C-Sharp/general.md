@@ -28,7 +28,7 @@
 
 - After instantiating a variable... there are more methods available on that variable. (Just type the variable name then a period)
 
-*Constants*
+**Constants**
 
 - These are immutable, the advantage is that it doesn't take up any memory like a variable does
 const float pi=3.14f;
@@ -44,12 +44,12 @@ enum weekDays { Monday = 1, Tuesday, Wednesday, Thursday, Friday};
 - Typing ```ctor``` then ```tab``` ```tab``` will make a constructor function for you in Visual Studio
 
 
-*Function Bodied Expression*
+**Function Bodied Expression**
 New feature as of last release of C#.
 
 public float AverageThreeScores(float a, float b, float c) => (a + b + c) / 3; // only use this in very simple methods.
 
-*Static Methods*
+**Static Methods**
 
 - Add ```static``` to beginning of method. Makes it visible from other classes, and can be used without instantiation.
 
@@ -80,7 +80,7 @@ public static float AverageThreeScores (float a, float b, float c) {
 
 The above '@' marks the string as a verbatim string literal - anything in the string that would normally be interpreted as an escape sequence is ignored.
 
-*To initialize a class in C# with some parameters:*
+**To initialize a class in C# with some parameters:**
 
 Class:
 
@@ -103,11 +103,91 @@ The below would initialize a new instance with values for X & Y
 button1.Tag = new Posicion() { X = 1, Y = 1 };
 
 
+**Ternary operations are possible in C#**
+```Exp1 ? Exp2 : Exp3;```
+In the above, if Exp1 is true then Exp2 runs. If false, then Exp3 runs.
+
+
+**Public Access Specifier**
+Public access specifier allows a class to expose its member variables and member functions to other functions and objects. Any public member can be accessed from outside the class.
+
+``` namespace RectangleApplication {
+   class Rectangle {
+      //member variables
+      public double length;
+      public double width;
+      
+      public double GetArea() {
+         return length * width;
+      }
+      public void Display() {
+         Console.WriteLine("Length: {0}", length);
+         Console.WriteLine("Width: {0}", width);
+         Console.WriteLine("Area: {0}", GetArea());
+      }
+   } ```
 
 
 
+**Defining a method in C#**
+``` <Access Specifier> <Return Type> <Method Name>(Parameter List) {
+   Method Body
+} ```
 
 
+*Access Specifier* − This determines the visibility of a variable or a method from another class.
+
+*Return type* − A method may return a value. The return type is the data type of the value the method returns. If the method is not returning any values, then the return type is void.
+
+*Method name* − Method name is a unique identifier and it is case sensitive. It cannot be same as any other identifier declared in the class.
+
+*Parameter list* − Enclosed between parentheses, the parameters are used to pass and receive data from a method. The parameter list refers to the type, order, and number of the parameters of a method. Parameters are optional; that is, a method may contain no parameters.
+
+*Method body* − This contains the set of instructions needed to complete the required activity.
+
+``` class NumberManipulator {
+
+   public int FindMax(int num1, int num2) {
+      /* local variable declaration */
+      int result;
+
+      if (num1 > num2)
+         result = num1;
+      else
+         result = num2;
+
+      return result;
+   }
+   ...
+} ```
 
 
+**Defining a structure**
 
+```struct Books {
+   public string title;
+   public string author;
+   public string subject;
+   public int book_id;
+};```
+
+
+```public class testStructure {
+   public static void Main(string[] args) {
+      Books Book1;   /* Declare Book1 of type Book */
+  
+      /* book 1 specification */
+      Book1.title = "C Programming";
+      Book1.author = "Nuha Ali"; 
+      Book1.subject = "C Programming Tutorial";
+      Book1.book_id = 6495407;    
+
+      /* print Book1 info */
+      Console.WriteLine( "Book 1 title : {0}", Book1.title);
+      Console.WriteLine("Book 1 author : {0}", Book1.author);
+      Console.WriteLine("Book 1 subject : {0}", Book1.subject);
+      Console.WriteLine("Book 1 book_id :{0}", Book1.book_id); 
+
+      Console.ReadKey();
+   }
+}```
