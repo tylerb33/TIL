@@ -73,12 +73,34 @@ public static float AverageThreeScores (float a, float b, float c) {
 
 - Console.ReadKey() - Obtains the next character or function key pressed by the user. The pressed key is displayed in the console window.
 
+- Console.ReadLine() - gets input from user in console. Same as gets.chomp in Ruby
 
 
+-string hello = @"Hello World";
 
+The above '@' marks the string as a verbatim string literal - anything in the string that would normally be interpreted as an escape sequence is ignored.
 
+*To initialize a class in C# with some parameters:*
 
+Class:
 
+``` using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Test
+{
+    public class Posicion
+    {
+        public int X { get; set; }
+        public int Y { get; set; }
+    }
+} ```
+
+The below would initialize a new instance with values for X & Y
+
+button1.Tag = new Posicion() { X = 1, Y = 1 };
 
 
 
