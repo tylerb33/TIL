@@ -25,6 +25,6 @@
 
 
 **Built-in Objects in ASP.NET**
-The "DateTime" object is a typical built-in ASP.NET object, but objects can also be self-defined, a web page, a text box, a file, a database record, etc.
+The "DateTime" object is a typical built-in ASP.NET object, but objects can also be self-defined, a web page, a text box, a file, a database record, et cetera.
 
 The ASP.NET ```DateTime``` object has a Now property (written as DateTime.Now), and the Now property has a Day property (written as DateTime.Now.Day). So you can call DateTime.Now.Hour to get the current hour in the Razor template.
