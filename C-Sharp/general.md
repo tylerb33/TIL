@@ -207,7 +207,11 @@ int a... = argument list
 *What is a method signature?*
 It includes method name and argument list. There can never be two methods with the same signature.
 
+*Overloading*
+Mulitple methods of the same name, but with different number of arguments or arguments of different types.
 
+
+- The 'out' keyword allows outputting of multiple values from a method.
 
 
 
