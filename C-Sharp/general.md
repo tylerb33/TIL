@@ -191,3 +191,34 @@ Public access specifier allows a class to expose its member variables and member
       Console.ReadKey();
    }
 }```
+
+
+**Structure of a method**
+
+```char myMethod(int a, string b, double c) 
+{
+  method contents...
+}```
+
+char = return type, if no return then it should be ```void```
+myMethod = method name
+int a... = argument list
+
+*What is a method signature?*
+It includes method name and argument list. There can never be two methods with the same signature.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
