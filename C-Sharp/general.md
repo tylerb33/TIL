@@ -214,7 +214,9 @@ Mulitple methods of the same name, but with different number of arguments or arg
 - The 'out' keyword allows outputting of multiple values from a method.
 
 
+**Variable and Refference Difference. A Short Story...**
 
+For example, think of a variable as like a piece of paper. It could have the value "5" or "false" written on it, but it couldn't have my house... it would have to have directions to my house. Those directions are the equivalent of a reference. In particular, two people could have different pieces of paper containing the same directions to my house - and if one person followed those directions and painted my house red, then the second person would see that change too. If they both just had separate pictures of my house on the paper, then one person colouring their paper wouldn't change the other person's paper at all.
 
 
 
