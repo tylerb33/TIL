@@ -4,6 +4,7 @@
 
 *Single Characters*
 \d -> 0-9
+\D -> one character that is not a digit
 \w -> A-Z a-z 0-9
 \W -> anything NOT A-Z a-z 0-9
 \s -> whitespace
@@ -16,7 +17,7 @@ Metacharacters that modify the previous character.
 + -> 1 or more
 ? -> 0 or 1 (optional)
 {min, max} -> range
-{n} -> need to read up on this one
+{n} -> exactly n number of times
 
 Example ```\w{5}``` all five letter combinations
 Example ```colou?rs?``` c followed by o, l, o, u(optionally), r, s(optionally)
@@ -25,3 +26,8 @@ Example ```colou?rs?``` c followed by o, l, o, u(optionally), r, s(optionally)
 ^ ->
 $ -> end
 \b -> word boundary
+
+
+*More characters*
+\. -> a period (special character needs to be escaped)
+\ -> escapes a special character
