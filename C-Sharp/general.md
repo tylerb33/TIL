@@ -316,31 +316,11 @@ static void Main(string[] args)
     }
 }
 
-*Creating a generic class*
+**Type Checking**
+*'Is' operator* - returns a true or false
+*'As' operator* - converts a variable to a certain type. If types are incompatible, 'as' returns 'null'
 
-public class MyStack<T>
-  {
-    private List<T> _list = new List<T>();
 
-    public void Push (T value)
-    {
-      _list.Add(value);
-    }
-
-    public bool IsEmpty()
-    {
-      return _list.count == 0;
-    }
-
-    public T Pop()
-    {
-      if (IsEmpty())
-      {
-        throw new InvalidOperationException("Stack is empty")
-      }
-      T value = _list
-    }
-  }
 
 
 
