@@ -258,9 +258,30 @@ Anatomy:
 -Must start with 'I', these are always public.
 -Methods doesn't have implementations.
 
+**Composition vs. Inheritance**
+
+Inheritance: "is a" relationship. So a student "is a" person. Inheritance overuse could lead to maintenance issues.
+
+Composition: "has a relationship". Composition is made of other classes?
+
+**Enums - Enumerations**
+```
+public enum MovieGenre
+{
+  Action,
+  Comedy,
+  Scifi,
+  Horror
+}
+```
 
 
+*Switch statements* are generally preferred over ifs, else ifs in C#.
 
+**Structs**
+-Somewhat similar to classes
+-Values types, instead of reference types like classes
+-No inheritance
 
 
 
