@@ -248,4 +248,47 @@ System.Object comes with many methods that can be overridden.
 }
 ```
 
+**Interfaces**
+
+Anatomy:
+```public interface IMyInterface
+{
+
+}```
+-Must start with 'I', these are always public.
+-Methods doesn't have implementations.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
