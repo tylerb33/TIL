@@ -283,7 +283,64 @@ public enum MovieGenre
 -Values types, instead of reference types like classes
 -No inheritance
 
+**Generics**
+An important and vital part of C#. They are algorithms and data structures that are created without knowing the exact data type they will be used with. They can work with any data type. Applies to methods and classes.
 
+```< >``` is how they are defined
+```System.Collections.Generic```
+
+T represents an unknown type, if you see this in Visual Studio. It is not a keyword though. Using T is just a convention. Others may use ```type```.
+
+static void Main(string[] args)
+{
+  List<string> games = new List<string>();
+    games.Add("Mass Effect");
+    games.Add("Bioshock");
+    games.Add("Prey");
+
+    foreach (string game in games)
+    {
+      Console.WriteLine(game);
+    }
+
+    List<int> randomNumbers = new List<int>();
+
+    Random r = new Random();
+    randomNumbers.Add(r.Next(1, 10));
+    randomNumbers.Add(r.Next(1, 10));
+    randomNumbers.Add(r.Next(1, 10));
+
+    foreach (int n in randomNumbers)
+    {
+      Console.Write("{0} ", n);
+    }
+}
+
+*Creating a generic class*
+
+public class MyStack<T>
+  {
+    private List<T> _list = new List<T>();
+
+    public void Push (T value)
+    {
+      _list.Add(value);
+    }
+
+    public bool IsEmpty()
+    {
+      return _list.count == 0;
+    }
+
+    public T Pop()
+    {
+      if (IsEmpty())
+      {
+        throw new InvalidOperationException("Stack is empty")
+      }
+      T value = _list
+    }
+  }
 
 
 
