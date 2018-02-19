@@ -220,11 +220,32 @@ For example, think of a variable as like a piece of paper. It could have the val
 
 
 
+**Inheritance**
 
+``` public class Student : Person ```
+Student is inheriting from Person.
 
+------------------------------------
+```Virtual``` allows for the method to be overridden
 
+```public virtual void SayHello()
+{
+  Console.WriteLine("Hello");
+}```
 
+Then the below would be able to override
+```public override void SayHello()
+{
+  Console.WriteLine("Hi there");
+}
+```
+------------------------------------
 
-
+System.Object comes with many methods that can be overridden. 
+```public override string ToString()
+{
+  return FirstName + " " + LastName + " " + Age;
+}
+```
 
 
