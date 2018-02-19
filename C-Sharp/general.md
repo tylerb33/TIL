@@ -220,6 +220,128 @@ For example, think of a variable as like a piece of paper. It could have the val
 
 
 
+**Inheritance**
+
+``` public class Student : Person ```
+Student is inheriting from Person.
+
+------------------------------------
+```Virtual``` allows for the method to be overridden
+
+```public virtual void SayHello()
+{
+  Console.WriteLine("Hello");
+}```
+
+Then the below would be able to override
+```public override void SayHello()
+{
+  Console.WriteLine("Hi there");
+}
+```
+------------------------------------
+
+System.Object comes with many methods that can be overridden. 
+```public override string ToString()
+{
+  return FirstName + " " + LastName + " " + Age;
+}
+```
+
+**Interfaces**
+
+Anatomy:
+```public interface IMyInterface
+{
+
+}```
+-Must start with 'I', these are always public.
+-Methods doesn't have implementations.
+
+**Composition vs. Inheritance**
+
+Inheritance: "is a" relationship. So a student "is a" person. Inheritance overuse could lead to maintenance issues.
+
+Composition: "has a relationship". Composition is made of other classes?
+
+**Enums - Enumerations**
+```
+public enum MovieGenre
+{
+  Action,
+  Comedy,
+  Scifi,
+  Horror
+}
+```
+
+
+*Switch statements* are generally preferred over ifs, else ifs in C#.
+
+**Structs**
+-Somewhat similar to classes
+-Values types, instead of reference types like classes
+-No inheritance
+
+**Generics**
+An important and vital part of C#. They are algorithms and data structures that are created without knowing the exact data type they will be used with. They can work with any data type. Applies to methods and classes.
+
+```< >``` is how they are defined
+```System.Collections.Generic```
+
+T represents an unknown type, if you see this in Visual Studio. It is not a keyword though. Using T is just a convention. Others may use ```type```.
+
+static void Main(string[] args)
+{
+  List<string> games = new List<string>();
+    games.Add("Mass Effect");
+    games.Add("Bioshock");
+    games.Add("Prey");
+
+    foreach (string game in games)
+    {
+      Console.WriteLine(game);
+    }
+
+    List<int> randomNumbers = new List<int>();
+
+    Random r = new Random();
+    randomNumbers.Add(r.Next(1, 10));
+    randomNumbers.Add(r.Next(1, 10));
+    randomNumbers.Add(r.Next(1, 10));
+
+    foreach (int n in randomNumbers)
+    {
+      Console.Write("{0} ", n);
+    }
+}
+
+**Type Checking**
+*'Is' operator* - returns a true or false
+*'As' operator* - converts a variable to a certain type. If types are incompatible, 'as' returns 'null'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
