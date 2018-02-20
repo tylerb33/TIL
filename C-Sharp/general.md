@@ -329,21 +329,75 @@ static void Main(string[] args)
 -```System.GC.Collect()``` - forces garbage collection, but is rarely used
 
 
+**Working with files**
+
+*Reading a text file*
+Step 1 - Create a StreamReader for the file
+Step 2 - Read the file, line by line or all the contents at once
+Step 3 - Close the stream
+
+```
+private static void readFile()
+{
+  StreamReader reader = new StreamReader("test-file.txt");
+  string contents = reader.ReadToEnd();
+  Console.WriteLine("File contents");
+  Console.WriteLine(contents);
+  reader.Close();
+}
+```
+
+*Reading a text file*
+Step 1 - Create a StreamWriter for the file
+Step 2 - Write the file, line by line or all the contents at once
+Step 3 - Close the stream
+
+```
+private static void writeFile()
+{
+  StreamWriter writer = new StreamWriter("test-file.txt", true);
+  writer.WriteLine("Visual Studio is cool");
+  writer.Close();
+}
+```
+
+If all file operations are in a 'using' block, then the stream will auto-close. Like below:
+
+```
+private static void readFile()
+{
+  try
+  {
+    using (StreamReader reader = new StreamReader("test-file.txt"))
+    {
+      string contents = reader.ReadToEnd();
+      Console.WriteLine("File contents");
+      Console.WriteLine(contents);
+    }
+  }
+  catch(FileNotFoundException e)
+  {
+    Console.WriteLine("File not found");
+  }
+  catch(FileLoadException e)
+  {
+    Console.WriteLine("File load failed");
+  }
+  catch(Exception)
+  {
+    Console.WriteLine("File operation failed");
+  }
+}
+```
 
 
+Reading/Writing files can be a blocking task. You can use 'async file operations' though.
 
+Instead of ReadToEnd(), use ReadToEndAsync(). You also need to put await in front, and also make the method async.
 
+**Handling Exceptions in Files**
 
-
-
-
-
-
-
-
-
-
-
+See above, the catch() methods used.
 
 
 
