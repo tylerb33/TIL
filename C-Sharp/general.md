@@ -321,8 +321,12 @@ static void Main(string[] args)
 *'As' operator* - converts a variable to a certain type. If types are incompatible, 'as' returns 'null'
 
 
+**Garbage Collection**
+-This removes unneeded objects from memory so that you don't have to.
 
+-As long as there's an active reference to an object, the object remains. Once that active reference goes away then the object is garbage collected.
 
+-```System.GC.Collect()``` - forces garbage collection, but is rarely used
 
 
 
