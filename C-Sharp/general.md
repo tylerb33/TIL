@@ -400,7 +400,24 @@ Instead of ReadToEnd(), use ReadToEndAsync(). You also need to put await in fron
 See above, the catch() methods used.
 
 
+**Inline out videos**
+-can be initialized when calling the method, instead of having to declar them outside first
+```
+  static void Main(string[] args)
+  {
+    calculate(8, 2, out int sum, out int diff);
+    Console.WriteLine($"Sum: {sum}");
+    Console.WriteLine($"Difference: {diff}");
+    Console.ReadKey();
 
+  }
+
+  private static void calculate(int a, int b, out int sum, out int diff)
+  {
+    sum = a + b;
+    diff = a - b;
+  }
+  ```
 
 
 
